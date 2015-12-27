@@ -1,7 +1,7 @@
 Datatable Sandbox
 =================
 
-> Just a sandbix for the [Datatable Bundle](https://github.com/waldo2188/DatatableBundle)
+> Just a sandbox for the [Datatable Bundle](https://github.com/waldo2188/DatatableBundle)
 
 This sandbox comes with a SqLite database. So no need to setup a MySql database. It come with several data to populate the database.
 
