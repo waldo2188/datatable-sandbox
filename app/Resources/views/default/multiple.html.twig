@@ -1,20 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Basic</h1>
+    <h1>Multiple actions</h1>
     {{ datatable_html({
             'id' : 'dta-products'
         })
     }}
-    
-    
-    
-{#{{ datatable({
-        'js' : {
-            'ajax' : path('product_list')
-        }
-    })
-}}#}
 {% endblock %}
 
 {% block javascripts %}
@@ -24,7 +15,7 @@
         'id' : 'dta-products',
         'js' : {
             'dom': '<"clearfix"lf>rtip',
-            'ajax': path('product_list'),
+            'ajax': path('multiple_product_list'),
         }
     })
     }}
