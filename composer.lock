@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bfa09d0886d5ed34affc5eeb8d514ddc",
-    "content-hash": "43e343ae3024743c7c86bcc461a572ea",
+    "hash": "97cbc71688ab00f213b1ea29f6e5e97b",
+    "content-hash": "430c7accc16ae4db1de24e9b75db1995",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2049,21 +2049,21 @@
         },
         {
             "name": "waldo/datatable-bundle",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/waldo2188/DatatableBundle.git",
-                "reference": "518eb5bfc794a013c02fc7364e1781e5d64e792b"
+                "reference": "14ef6b1066d7d95f856eab88fbdbbbf336b60166"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/waldo2188/DatatableBundle/zipball/518eb5bfc794a013c02fc7364e1781e5d64e792b",
-                "reference": "518eb5bfc794a013c02fc7364e1781e5d64e792b",
+                "url": "https://api.github.com/repos/waldo2188/DatatableBundle/zipball/14ef6b1066d7d95f856eab88fbdbbbf336b60166",
+                "reference": "14ef6b1066d7d95f856eab88fbdbbbf336b60166",
                 "shasum": ""
             },
             "require": {
                 "doctrine/common": "~2.1",
-                "php": ">=5.3.0",
+                "php": ">=5.4.0",
                 "twig/twig": "~1.8"
             },
             "require-dev": {
@@ -2106,7 +2106,7 @@
                 "datatable",
                 "jquery"
             ],
-            "time": "2015-09-16 12:42:22"
+            "time": "2015-12-16 13:43:27"
         }
     ],
     "packages-dev": [

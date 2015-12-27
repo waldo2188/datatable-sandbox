@@ -11,11 +11,32 @@ class DefaultController extends Controller
     /**
      * @Route("/", name="homepage")
      */
-    public function indexAction(Request $request)
+    public function indexAction()
     {
-        // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', array(
-            'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
-        ));
+        $this->datatableProduct();
+        
+        return $this->render('default/index.html.twig', array());
+    }
+    
+    /**
+     * @Route("/list", name="product_list")
+     */
+    public function productListAction()
+    {
+        return $this->datatableProduct()->execute();
+    }
+    
+    private function datatableProduct()
+    {
+        return $this->get('datatable')
+                ->setEntity("AppBundle:Product", "p")
+                ->setFields(
+                        array(
+                            "Name"          => 'p.name',
+                            "Description"       => 'p.description',
+                            "Price"         => 'p.price',
+                            "_identifier_"  => 'p.id')
+                        )
+                ;
     }
 }
