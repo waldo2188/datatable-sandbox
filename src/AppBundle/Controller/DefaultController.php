@@ -28,6 +28,7 @@ class DefaultController extends Controller
     
     private function datatableProduct()
     {
+  
         return $this->get('datatable')
                 ->setEntity("AppBundle:Product", "p")
                 ->setFields(
