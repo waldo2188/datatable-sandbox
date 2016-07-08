@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Basic</h1>
+    {{ datatable_html({
+        'id' : 'dta-products'
+    })
+    }}
+
+
+
+    {#{{ datatable({
+            'js' : {
+                'ajax' : path('product_list')
+            }
+        })
+    }}#}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    {{ datatable_js({
+        'id' : 'dta-products',
+        'js' : {
+            'dom': '<"clearfix"lf>rtip',
+            'ajax': path('product_list'),
+        }
+    })
+    }}
+
+{% endblock javascripts %}
