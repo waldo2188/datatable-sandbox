@@ -29,7 +29,7 @@ class DefaultController extends Controller
     private function datatableProduct()
     {
   
-        return $this->get('datatable')
+        $dt = $this->get('datatable')
                 ->setEntity("AppBundle:Product", "p")
                 ->setFields(
                         array(
@@ -40,6 +40,9 @@ class DefaultController extends Controller
                         )
                 ->setSearch(true)
                 ;
+
+
+        return $dt;
     }
     
     

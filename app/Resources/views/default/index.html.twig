@@ -3,23 +3,23 @@
 {% block body %}
     <h1>Basic</h1>
     {{ datatable_html({
-            'id' : 'dta-products'
-        })
-    }}
-    
-    
-    
-{#{{ datatable({
-        'js' : {
-            'ajax' : path('product_list')
-        }
+        'id' : 'dta-products'
     })
-}}#}
+    }}
+
+
+
+    {#{{ datatable({
+            'js' : {
+                'ajax' : path('product_list')
+            }
+        })
+    }}#}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    
+
     {{ datatable_js({
         'id' : 'dta-products',
         'js' : {
@@ -28,6 +28,5 @@
         }
     })
     }}
-    
+
 {% endblock javascripts %}
-    

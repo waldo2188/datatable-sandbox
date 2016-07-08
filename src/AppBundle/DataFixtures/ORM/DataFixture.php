@@ -2,7 +2,6 @@
 
 namespace AppBundle\DataFixtures\ORM;
 
-use Symfony\Component\DependencyInjection\ContainerAware;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use AppBundle\Entity\Product;
@@ -12,7 +11,7 @@ use AppBundle\Entity\Feature;
  *
  * @author valérian Girard <valerian.girard@educagri.fr>
  */
-class DataFixture extends ContainerAware implements FixtureInterface
+class DataFixture implements FixtureInterface
 {
 
     /**

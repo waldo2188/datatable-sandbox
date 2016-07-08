@@ -3,14 +3,14 @@
 {% block body %}
     <h1>Multiple actions</h1>
     {{ datatable_html({
-            'id' : 'dta-products'
-        })
+        'id' : 'dta-products'
+    })
     }}
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
-    
+
     {{ datatable_js({
         'id' : 'dta-products',
         'js' : {
@@ -19,6 +19,6 @@
         }
     })
     }}
-    
+
 {% endblock javascripts %}
     
